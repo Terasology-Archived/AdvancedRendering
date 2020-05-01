@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.terasology.rendering;
+package org.terasology.advancedRendering.rendering;
 
+import org.terasology.basicRendering.rendering.dag.nodes.AmbientOcclusionNode;
+import org.terasology.basicRendering.rendering.dag.nodes.BloomBlurNode;
+import org.terasology.basicRendering.rendering.dag.nodes.BlurredAmbientOcclusionNode;
+import org.terasology.basicRendering.rendering.dag.nodes.BufferClearingNode;
+import org.terasology.basicRendering.rendering.dag.nodes.HazeNode;
+import org.terasology.basicRendering.rendering.dag.nodes.HighPassNode;
+import org.terasology.basicRendering.rendering.dag.nodes.LightShaftsNode;
+import org.terasology.basicRendering.rendering.dag.nodes.ShadowMapNode;
 import org.terasology.context.Context;
 import org.terasology.rendering.cameras.Camera;
 import org.terasology.rendering.dag.ModuleRendering;
 import org.terasology.rendering.dag.Node;
-import org.terasology.rendering.dag.nodes.AmbientOcclusionNode;
-import org.terasology.rendering.dag.nodes.BloomBlurNode;
-import org.terasology.rendering.dag.nodes.BlurredAmbientOcclusionNode;
-import org.terasology.rendering.dag.nodes.BufferClearingNode;
-import org.terasology.rendering.dag.nodes.HazeNode;
-import org.terasology.rendering.dag.nodes.HighPassNode;
-import org.terasology.rendering.dag.nodes.LightShaftsNode;
-import org.terasology.rendering.dag.nodes.ShadowMapNode;
 import org.terasology.rendering.opengl.FBO;
 import org.terasology.rendering.opengl.FboConfig;
 import org.terasology.rendering.opengl.fbms.DisplayResolutionDependentFbo;
